@@ -90,3 +90,75 @@
     background: #f77062;
     color:#fff;
 }
+/*//////////////////////////////////////*/
+/* Styles for devices with a width up to 768px */
+@media (max-width: 768px) {
+    .navbar__container {
+        padding: 0 20px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #131313;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        padding: 20px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar__toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+}
+
+/* Styles for devices with a width up to 480px */
+@media (max-width: 480px) {
+    #navbar__logo{
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    
+
+    .button {
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
